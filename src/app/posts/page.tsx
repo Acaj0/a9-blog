@@ -13,8 +13,9 @@ const Page = async ({
   const result = await wisp.getPosts({ limit: 6, page });
   return (
     <div className="">
-      <div className=" bg-black">
+      <div className=" bg-[#003F85] overflow-clip">
         <NavBar />
+        <div className="w-screen bg-[#FF7600] h-2"></div>
       </div>
       <div className="container mx-auto px-5 mb-10">
         <BlogPostsPreview posts={result.posts} />

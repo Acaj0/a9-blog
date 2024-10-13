@@ -6,9 +6,9 @@ import { Button } from "./ui/button";
 export default function NavBar() {
   return (
     <div>
-      <div className="bg-[#014893] h-12 flex md:hidden justify-between items-center p-2">
+      <div className="bg-[#003F85] h-12 flex md:hidden justify-between items-center p-2">
         <a href="/">
-          <div className="w-[40px]">
+          <div className="w-[70px]">
             <AspectRatio ratio={4 / 4}>
               <Image
                 unoptimized={true}
@@ -70,7 +70,17 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button size="icon" name="menu">
+        <Button
+          size="icon"
+          name="menu"
+          style={{
+            backgroundColor: "white", // Fundo azul
+            border: "2px solid white", // Borda branca
+            color: "#003F85", // Ícone branco
+            borderRadius: "20%", // Deixa o botão circular
+            padding: "10px", // Tamanho do botão
+          }}
+        >
           <svg
             width="25"
             height="25"
@@ -93,6 +103,7 @@ const MobileNav = () => {
           <a href="/">Sobre Nós</a>
           <a href="/">Serviços</a>
           <a href="/">Contato</a>
+          <a href="/posts">Blog</a>
         </div>
       </SheetContent>
     </Sheet>

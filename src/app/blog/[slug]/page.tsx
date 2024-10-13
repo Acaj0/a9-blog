@@ -1,6 +1,7 @@
 import { BlogPostContent } from "@/components/BlogPostContent";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import NavBar from "@/components/NavBar";
 import { RelatedPosts } from "@/components/RelatedPosts";
 import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
@@ -67,8 +68,11 @@ const Page = async ({ params: { slug } }: { params: Params }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <div className=" bg-[#003F85] overflow-clip">
+        <NavBar />
+        <div className="w-screen bg-[#FF7600] h-2"></div>
+      </div>
       <div className="container mx-auto px-5">
-        <Header />
         <BlogPostContent post={result.post} />
         <RelatedPosts posts={posts} />
         <Footer />
