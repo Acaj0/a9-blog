@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 export default function NavBar() {
   return (
     <div>
-      <div className="h-12 flex md:hidden justify-between items-center p-2">
+      <div className="h-12 flex lg:hidden justify-between items-center p-2">
         <a href="/">
           <div className="w-[80px]">
             <AspectRatio ratio={4 / 4}>
@@ -23,7 +23,7 @@ export default function NavBar() {
         <h1 className="italic text-xl text-white"></h1> <MobileNav />{" "}
       </div>
 
-      <div className="hidden h-24 md:flex justify-between px-28 items-center gap-20 text-xl text-white">
+      <div className="hidden h-24 lg:flex justify-between px-28 items-center gap-20 text-xl text-white">
         <a href="/">
           <div className="w-[90px]">
             <AspectRatio ratio={4 / 4}>

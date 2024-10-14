@@ -17,12 +17,12 @@ const Page = async ({
       <div className="h-screen bg-cover bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
         <div className="h-full bg-black/30 md:bg-transparent">
           <NavBar />
-          <div className="flex md:px-28 flex-col text-left  items-end ">
-            <div className="md:w-[850px] md:mt-30 mt-14 md:text-justify md:bg-black/30 p-10 md:rounded-3xl ">
-              <h1 className="text-4xl md:text-5xl ">
+          <div className="flex lg:px-28 flex-col text-left lg:items-end justify-center lg:justify-start h-full ">
+            <div className="lg:w-[850px] lg:mt-14 lg:text-justify lg:bg-black/30 p-10 lg:rounded-3xl ">
+              <h1 className="text-4xl lg:text-5xl ">
                 Mais Agilidade e Qualidade!
               </h1>
-              <h2 className="text-xl md:text-xl mt-5">
+              <h2 className="text-xl lg:text-xl mt-5">
                 Na A9, transportamos sua carga com agilidade e confiança. Com
                 sede em Várzea Grande, MT, oferecemos soluções personalizadas
                 para o transporte de mercadorias em todo o Brasil.
