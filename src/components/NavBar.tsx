@@ -45,7 +45,8 @@ export default function NavBar() {
           </a>
           <a
             className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200"
-            href="/"
+            href="Portifolio de Servicos.pdf"
+            target="_blank"
           >
             Serviços
           </a>
@@ -101,7 +102,9 @@ const MobileNav = () => {
         <div className="mt-10 flex flex-col gap-6 text-base font-semibold">
           <a href="/">Inicio</a>
           <a href="/">Sobre Nós</a>
-          <a href="/">Serviços</a>
+          <a href="Portifolio de Servicos.pdf" target="_blank">
+            Serviços
+          </a>
           <a href="/">Contato</a>
           <a href="/posts">Blog</a>
         </div>

@@ -1,5 +1,6 @@
 import { BlogPostsPreview } from "@/components/BlogPostPreview";
 import { BlogPostsPagination } from "@/components/BlogPostsPagination";
+import { Fale } from "@/components/Fale";
 import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import { wisp } from "@/lib/wisp";
@@ -13,21 +14,26 @@ const Page = async ({
   const result = await wisp.getPosts({ limit: 6, page });
   return (
     <div className="overflow-clip">
-      <div className="h-screen bg-cover  bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
-        <NavBar />
-        <div className="flex md:px-28 flex-col text-left h-full items-end ">
-          <div className="md:w-[850px] md:mt-40 mt-20 text-justify backdrop-blur-sm p-2 rounded-lg ">
-            <h1 className="text-4xl md:text-6xl ">
-              Mais Agilidade e Qualidade!
-            </h1>
-            <h2 className="text-xl md:text-2xl mt-5 text-pretty">
-              Na A9, transportamos sua carga com agilidade e confiança. Com sede
-              em Várzea Grande, MT, oferecemos soluções personalizadas para o
-              transporte de mercadorias em todo o Brasil.
-            </h2>
-            <h3 className="text-xl md:text-2xl mt-10">
-              Precisa de uma cotação?
-            </h3>
+      <div className="h-screen bg-cover bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
+        <div className="h-full bg-black/30 md:bg-transparent">
+          <NavBar />
+          <div className="flex md:px-28 flex-col text-left  items-end ">
+            <div className="md:w-[850px] md:mt-30 mt-14 md:text-justify md:bg-black/30 p-10 md:rounded-3xl ">
+              <h1 className="text-4xl md:text-5xl ">
+                Mais Agilidade e Qualidade!
+              </h1>
+              <h2 className="text-xl md:text-xl mt-5">
+                Na A9, transportamos sua carga com agilidade e confiança. Com
+                sede em Várzea Grande, MT, oferecemos soluções personalizadas
+                para o transporte de mercadorias em todo o Brasil.
+              </h2>
+              <h3 className="text-xl md:text-xl mt-10">
+                Precisa de uma cotação?
+              </h3>
+              <div className="flex mt-5 text-left ">
+                <Fale />
+              </div>
+            </div>
           </div>
         </div>
       </div>
