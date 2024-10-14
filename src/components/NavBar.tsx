@@ -6,9 +6,9 @@ import { Button } from "./ui/button";
 export default function NavBar() {
   return (
     <div>
-      <div className="bg-[#003F85] h-12 flex md:hidden justify-between items-center p-2">
+      <div className="h-12 flex md:hidden justify-between items-center p-2">
         <a href="/">
-          <div className="w-[70px]">
+          <div className="w-[80px]">
             <AspectRatio ratio={4 / 4}>
               <Image
                 unoptimized={true}
@@ -74,11 +74,11 @@ const MobileNav = () => {
           size="icon"
           name="menu"
           style={{
-            backgroundColor: "white", // Fundo azul
-            border: "2px solid white", // Borda branca
-            color: "#003F85", // Ícone branco
-            borderRadius: "20%", // Deixa o botão circular
-            padding: "10px", // Tamanho do botão
+            backgroundColor: "white",
+            border: "2px solid white",
+            color: "#003F85",
+            borderRadius: "20%",
+            padding: "10px",
           }}
         >
           <svg
