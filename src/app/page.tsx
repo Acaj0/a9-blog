@@ -79,7 +79,7 @@ const Page = async ({
         <div className="container mx-auto px-5 z-50">
           <div className="flex flex-col z-0 items-center">
             <h2 className="text-6xl mt-16">Portfólio de Serviços</h2>
-            <span className="mt-4 text-xl text-gray-500">
+            <span className="mt-4 text-xl text-gray-500 text-justify">
               Com mais de 9 anos de experiência no mercado, a A9 oferece
               transporte ágil e eficiente, utilizando equipamentos modernos e
               ferramentas logísticas avançadas. Atendemos a diversas

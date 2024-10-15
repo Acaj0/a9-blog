@@ -72,7 +72,7 @@ const Page = async ({ params: { slug } }: { params: Params }) => {
         <NavBar />
         <div className="w-screen bg-[#FF7600] h-2"></div>
       </div>
-      <div className="container mx-auto px-5">
+      <div className="container mx-auto px-5 mt-10">
         <BlogPostContent post={result.post} />
         <RelatedPosts posts={posts} />
         <Footer />
