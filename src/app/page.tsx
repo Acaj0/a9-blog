@@ -3,7 +3,9 @@ import { BlogPostsPagination } from "@/components/BlogPostsPagination";
 import { Fale } from "@/components/Fale";
 import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { wisp } from "@/lib/wisp";
+import Image from "next/image";
 
 const Page = async ({
   searchParams,
@@ -17,7 +19,7 @@ const Page = async ({
       <div className="h-screen bg-cover bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
         <div className="h-full bg-black/30 md:bg-transparent">
           <NavBar />
-          <div className="flex lg:px-28 flex-col text-left lg:items-end justify-center lg:justify-start h-full ">
+          <section id="1" className="flex lg:px-28 flex-col text-left lg:items-end justify-center lg:justify-start h-full ">
             <div className="lg:w-[850px] lg:mt-14 lg:text-justify lg:bg-black/30 p-10 lg:rounded-3xl ">
               <h1 className="text-4xl lg:text-5xl ">
                 Mais Agilidade e Qualidade!
@@ -34,22 +36,58 @@ const Page = async ({
                 <Fale />
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
       <div className="w-screen bg-[#003F85] h-4"></div>
       <div className="w-screen bg-[#FF7600] h-2"></div>
       <div className="container mx-auto px-5 mb-10">
-        <h2 className="text-4xl mt-4">Ultimas Postagens</h2>
+        <h2 className="text-6xl mt-4">Ultimas Notícias</h2>
         <BlogPostsPreview posts={result.posts.slice(0, 2)} />
         <div className="flex items-center justify-center">
           <a
             className="text-xl transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
             href="/posts"
           >
-            Ver Todas as Postagens
+            Ver Todas as Notícias
           </a>
         </div>
+      </div>
+      <section id="2" className="bg-[#f5f5f5] h-auto justify-center">
+        <div className="container mx-auto px-5 z-50">
+          <div className="flex flex-col z-0 items-center">
+            <h2 className="text-6xl mt-16">Portfólio de Serviços</h2>
+            <span className="mt-4 text-xl text-gray-500">
+              Com mais de 9 anos de experiência no mercado, a A9 oferece
+              transporte ágil e eficiente, utilizando equipamentos modernos e
+              ferramentas logísticas avançadas. Atendemos a diversas
+              necessidades de transporte, sem possuir frota própria, o que nos
+              permite fornecer soluções customizadas e de confiança. Atuamos em
+              todo o estado de Mato Grosso, conectando suas principais cidades e
+              regiões, além de rotas interestaduais como MT-PA, MT-SP e MT-GO.
+            </span>
+            <AspectRatio ratio={16 / 9} className="mt-10">
+              <Image
+                unoptimized={true}
+                src={"/tech.png"}
+                fill
+                alt="tech"
+                className="rounded-md object-cover z-10 md:flex hidden"
+              />
+            </AspectRatio>
+            <a
+              className="z-50 mb-10 text-xl hover:text-white hover:bg-[#FF7600] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
+              href="Portifolio de Servicos.pdf"
+              target="_blank"
+            >
+              Ver Portfólio Completo
+            </a>
+          </div>
+        </div>
+
+        <div className="w-screen bg-[#003F85] h-12"></div>
+      </section>
+      <div className="container mx-auto px-5 mb-10">
         <Footer />
       </div>
     </div>

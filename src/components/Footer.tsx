@@ -19,7 +19,6 @@ export const Footer: FunctionComponent = () => {
               <Rss className="w-4 h-4" />
             </Button>
           </Link>
-          <DarkModeToggle />
         </div>
       </div>
       <div className="text-xs text-muted-foreground ">

@@ -45,8 +45,7 @@ export default function NavBar() {
           </a>
           <a
             className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200"
-            href="Portifolio de Servicos.pdf"
-            target="_blank"
+            href="#2"
           >
             Serviços
           </a>
@@ -60,7 +59,7 @@ export default function NavBar() {
             className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200"
             href="/posts"
           >
-            Blog
+            Canal de Notícias
           </a>
         </div>
       </div>
@@ -106,7 +105,7 @@ const MobileNav = () => {
             Serviços
           </a>
           <a href="/">Contato</a>
-          <a href="/posts">Blog</a>
+          <a href="/posts">Canal de Notícias</a>
         </div>
       </SheetContent>
     </Sheet>
