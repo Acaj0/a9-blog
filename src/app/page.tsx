@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { wisp } from "@/lib/wisp";
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 
 const Page = async ({
   searchParams,
@@ -14,12 +14,34 @@ const Page = async ({
 }) => {
   const page = searchParams.page ? parseInt(searchParams.page as string) : 1;
   const result = await wisp.getPosts({ limit: 6, page });
+  const common = { alt: "Art Direction Example", sizes: "100vw" };
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    width: 1440,
+    height: 875,
+    quality: 100,
+    src: "/tech.png",
+  });
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    width: 750,
+    height: 1334,
+    quality: 70,
+    src: "/tech_mob.png",
+  });
   return (
     <div className="overflow-clip">
       <div className="h-screen bg-cover bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
         <div className="h-full bg-black/30 md:bg-transparent">
           <NavBar />
-          <section id="1" className="flex lg:px-28 flex-col text-left lg:items-end justify-center lg:justify-start h-full ">
+          <section
+            id="1"
+            className="flex lg:px-28 flex-col text-left lg:items-end justify-center lg:justify-start h-full "
+          >
             <div className="lg:w-[850px] lg:mt-14 lg:text-justify lg:bg-black/30 p-10 lg:rounded-3xl ">
               <h1 className="text-4xl lg:text-5xl ">
                 Mais Agilidade e Qualidade!
@@ -66,15 +88,11 @@ const Page = async ({
               todo o estado de Mato Grosso, conectando suas principais cidades e
               regiões, além de rotas interestaduais como MT-PA, MT-SP e MT-GO.
             </span>
-            <AspectRatio ratio={16 / 9} className="mt-10">
-              <Image
-                unoptimized={true}
-                src={"/tech.png"}
-                fill
-                alt="tech"
-                className="rounded-md object-cover z-10 md:flex hidden"
-              />
-            </AspectRatio>
+            <picture>
+              <source media="(min-width: 1000px)" srcSet={desktop} />
+              <source media="(min-width: 500px)" srcSet={mobile} />
+              <img {...rest} style={{ width: "100%", height: "auto" }} />
+            </picture>
             <a
               className="z-50 mb-10 text-xl hover:text-white hover:bg-[#FF7600] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
               href="Portifolio de Servicos.pdf"
