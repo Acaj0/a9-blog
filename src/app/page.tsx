@@ -35,6 +35,7 @@ const Page = async ({
   });
   return (
     <div className="overflow-clip">
+      <div className="w-screen bg-[#003F85] h-1"></div>
       <div className="h-screen bg-cover bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
         <div className="h-full bg-black/30 md:bg-transparent">
           <NavBar />
