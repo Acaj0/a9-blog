@@ -63,18 +63,6 @@ const Page = async ({
       </div>
       <div className="w-screen bg-[#003F85] h-4"></div>
       <div className="w-screen bg-[#FF7600] h-2"></div>
-      <div className="container mx-auto px-5 mb-10">
-        <h2 className="text-6xl mt-4">Ultimas Notícias</h2>
-        <BlogPostsPreview posts={result.posts.slice(0, 2)} />
-        <div className="flex items-center justify-center">
-          <a
-            className="text-xl transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
-            href="/posts"
-          >
-            Ver Todas as Notícias
-          </a>
-        </div>
-      </div>
       <section id="2" className="bg-[#f5f5f5] h-auto justify-center">
         <div className="container mx-auto px-5 z-50">
           <div className="flex flex-col z-0 items-center">
@@ -83,10 +71,11 @@ const Page = async ({
               Com mais de 9 anos de experiência no mercado, a A9 oferece
               transporte ágil e eficiente, utilizando equipamentos modernos e
               ferramentas logísticas avançadas. Atendemos a diversas
-              necessidades de transporte, sem possuir frota própria, o que nos
-              permite fornecer soluções customizadas e de confiança. Atuamos em
-              todo o estado de Mato Grosso, conectando suas principais cidades e
-              regiões, além de rotas interestaduais como MT-PA, MT-SP e MT-GO.
+              necessidades de transporte, contamos com frota própria e
+              agregados, o que nos permite fornecer soluções customizadas e de
+              confiança. Atuamos em todo o estado de Mato Grosso, conectando
+              suas principais cidades e regiões, além de rotas interestaduais
+              atendendo principalmente o centro oeste, sudeste e sul do país.
             </span>
             <picture>
               <source media="(min-width: 1000px)" srcSet={desktop} />
@@ -103,8 +92,20 @@ const Page = async ({
           </div>
         </div>
 
-        <div className="w-screen bg-[#003F85] h-12"></div>
+        <div className="w-screen bg-[#003F85] h-6"></div>
       </section>
+      <div className="container mx-auto px-5 mb-10">
+        <h2 className="text-6xl mt-4">Ultimas Notícias</h2>
+        <BlogPostsPreview posts={result.posts.slice(0, 2)} />
+        <div className="flex items-center justify-center">
+          <a
+            className="text-xl transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
+            href="/posts"
+          >
+            Ver Todas as Notícias
+          </a>
+        </div>
+      </div>
       <div className="container mx-auto px-5 mb-10">
         <Footer />
       </div>
