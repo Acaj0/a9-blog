@@ -10,7 +10,7 @@ const fontSans = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "A9 Agência de Cargas",
-  description: "teste"
+  description: "teste",
 };
 
 export default function RootLayout({
@@ -20,12 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body
-        className={cn(
-          "font-sans",
-          fontSans.variable
-        )}
-      >
+      <head>
+        <link rel="icon" href="/ICON.png" />
+      </head>
+      <body className={cn("font-sans", fontSans.variable)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
