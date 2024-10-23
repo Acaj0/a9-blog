@@ -52,7 +52,7 @@ const Page = async ({
     src: "/mob.png",
   });
   return (
-    <div className="overflow-clip">
+    <div className="overflow-clip ">
       <div className="h-screen">
         <div className=" bg-[#003F85] overflow-clip">
           <NavBar />
@@ -142,7 +142,7 @@ const Page = async ({
               principais pilares:
             </span>{" "}
             <div className="grid mt-20 md:grid-cols-2 mb-20 gap-20 p-1">
-              <div className="flex items-center md:flex-row flex-col gap-5">
+              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -168,7 +168,7 @@ const Page = async ({
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center md:flex-row flex-col gap-5">
+              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -193,7 +193,7 @@ const Page = async ({
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center md:flex-row flex-col gap-5">
+              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -218,7 +218,7 @@ const Page = async ({
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center md:flex-row flex-col gap-5">
+              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"

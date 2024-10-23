@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      scale: {
+        "90": "0.9", // Adicionando escala de 90%
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
