@@ -9,7 +9,7 @@ import "./globals.css";
 const fontSans = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "A9 Agência de Cargas",
+  title: "A9 Logística",
   keywords: "A9 Agência de Cargas, logística, transporte de cargas, frete, Várzea Grande, Mato Grosso, transporte seguro, eficiência em logística",
   description:
     "A9 Agência de Cargas oferece soluções completas em logística e transporte de cargas. Localizada em Várzea Grande, MT, garantimos agilidade e segurança em cada entrega.",

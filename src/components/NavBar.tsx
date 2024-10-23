@@ -51,7 +51,7 @@ export default function NavBar() {
           </a>
           <a
             className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200"
-            href="/"
+            href="/#4"
           >
             Contato
           </a>
