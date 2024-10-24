@@ -111,7 +111,7 @@ const Page = async ({
             </picture>
             <a
               className="z-50 mb-10 text-xl hover:text-white hover:bg-[#FF7600] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
-              href="Portifolio de Servicos.pdf"
+              /*href="Portifolio de Servicos.pdf"*/
               target="_blank"
             >
               Ver Portfólio Completo
