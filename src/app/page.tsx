@@ -134,11 +134,12 @@ const Page = async ({
             {" "}
             <h1 className="text-6xl mt-10">O que Podemos Fazer por Você</h1>
             <span className="mt-6 text-xl text-gray-500 text-justify">
-              Nós oferecemos soluções logísticas sob medida, cuidando de todo o
-              processo de transporte, desde o planejamento até o rastreamento
-              detalhado. Independentemente do porte da sua operação, estamos
-              prontos para atender suas necessidades para simplificar e otimizar
-              seu carregamento. Nossos principais pilares:
+              Nossa atuação é focada no modelo B2B, oferecendo soluções
+              logísticas sob medida, cuidando de todo o processo de transporte,
+              desde o planejamento até o rastreamento detalhado.
+              Independentemente do porte da sua operação, estamos prontos para
+              atender suas necessidades para simplificar e otimizar seu
+              carregamento. Nossos principais pilares:
             </span>{" "}
             <div className="grid mt-20 md:grid-cols-2 mb-20 gap-20 p-1">
               <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">

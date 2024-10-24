@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <head>
-        <link rel="icon" href="/ICON.png" />
+        <link rel="icon" href="/a9.png" />
       </head>
       <body className={cn("font-sans", fontSans.variable)}>
         <ThemeProvider
