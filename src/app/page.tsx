@@ -137,9 +137,8 @@ const Page = async ({
               Nós oferecemos soluções logísticas sob medida, cuidando de todo o
               processo de transporte, desde o planejamento até o rastreamento
               detalhado. Independentemente do porte da sua operação, estamos
-              prontos para atender suas necessidades com a expertise necessária
-              para simplificar e otimizar sua cadeia de suprimentos. Nossos
-              principais pilares:
+              prontos para atender suas necessidades para simplificar e otimizar
+              seu carregamento. Nossos principais pilares:
             </span>{" "}
             <div className="grid mt-20 md:grid-cols-2 mb-20 gap-20 p-1">
               <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
@@ -267,17 +266,16 @@ const Page = async ({
         <div className="container mx-auto px-5 z-50 p-10 flex items-center justify-center flex-col md:flex-row gap-5">
           <div className="md:w-[540px] items-center flex flex-col p-5">
             <span className="text-6xl">Entre em Contato</span>
-            <h3 className="mt-5 mx-2 text-2xl">
-              Tem dúvidas ou precisa de uma solução logística personalizada?
-              Estamos aqui para ajudar!
+            <h3 className="mt-5 mx-2 text-2xl text-left">
+              Tem dúvidas ou precisa de um orçamento?
             </h3>
             <div className="hidden md:flex">
-              <h4 className="mt-5 mx-2 text-2xl ">
+              <h4 className="mt-5 mx-2 text-2xl text-justify ">
                 Entre em contato conosco através dos canais ao lado
               </h4>
             </div>
             <div className="md:hidden flex">
-              <h4 className="mt-5 mx-2 text-2xl ">
+              <h4 className="mt-5 mx-2 text-2xl text-justify ">
                 Entre em contato conosco através dos canais abaixo
               </h4>
             </div>

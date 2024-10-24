@@ -6,8 +6,7 @@ import { MapPin, Phone, Send } from "lucide-react";
 
 export default function CC() {
   return (
-    <section className=" max-w-md px-6 py-16 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-10 text-center">Entre em Contato</h2>
+    <section className=" max-w-md px-6 pt-10 pb-5 bg-[#f5f5f5]  rounded-lg shadow-md">
       <a href="mailto:faturamentoa9@gmail.com">
         <Button className="w-full">
           <Send className="mr-2 h-4 w-4" />
@@ -17,7 +16,12 @@ export default function CC() {
       <div className="mt-6 space-y-6">
         <Button
           className="w-full bg-green-500 hover:bg-green-600"
-          onClick={() => window.open("https://api.whatsapp.com/send?phone=5565999262232", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://api.whatsapp.com/send?phone=5565999262232",
+              "_blank"
+            )
+          }
         >
           <svg
             className="mr-2 h-4 w-4"

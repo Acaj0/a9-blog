@@ -102,7 +102,7 @@ const MobileNav = () => {
           <a href="/">Inicio</a>
           <a href="/">Sobre Nós</a>
           <a href="/#2">Serviços</a>
-          <a href="/">Contato</a>
+          <a href="/#4">Contato</a>
           <a href="/posts">Canal de Notícias</a>
         </div>
       </SheetContent>

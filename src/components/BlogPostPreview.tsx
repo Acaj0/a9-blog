@@ -28,7 +28,7 @@ export const BlogPostPreview: FunctionComponent<{
         <div className="prose lg:prose-lg italic tracking-tighter text-muted-foreground">
           {formatDate(post.publishedAt || post.updatedAt, "dd MMMM yyyy")}
         </div>
-        <div className="prose lg:prose-lg leading-relaxed md:text-lg line-clamp-4 text-muted-foreground">
+        <div className="prose lg:prose-lg text-justify leading-relaxed md:text-lg line-clamp-4 text-muted-foreground">
           {post.description}
         </div>
         <div className="text-sm text-muted-foreground">
