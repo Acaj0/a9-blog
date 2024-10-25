@@ -10,7 +10,7 @@ export const Footer: FunctionComponent = () => {
   return (
     <section className="mt-8 md:mt-16 mb-12">
       <div className="flex items-center justify-between">
-        <div className="text-sm text-muted-foreground">
+        <div className="text-md text-muted-foreground">
           ©A9 Agência de Cargas {new Date().getFullYear()}
         </div>
         <div>
@@ -21,11 +21,14 @@ export const Footer: FunctionComponent = () => {
           </Link>
         </div>
       </div>
+      <div className="text-sm text-muted-foreground">
+          <a href="https://www.lumenweb.com.br/" className="hover:underline" target="_blank">Lumen Desenvolvimento Web</a>
+        </div>
       <div className="text-xs text-muted-foreground ">
         <Link
           href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
         >
-          Blog powered by wisp
+          & powered by wisp
         </Link>
       </div>
     </section>
