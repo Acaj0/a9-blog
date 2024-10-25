@@ -4,7 +4,7 @@ import { Fale } from "@/components/Fale";
 import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import { wisp } from "@/lib/wisp";
-import Image, { getImageProps } from "next/image";
+import  { getImageProps } from "next/image";
 
 const Page = async ({
   searchParams,
@@ -58,7 +58,7 @@ const Page = async ({
           <NavBar />
           <div className="w-screen bg-[#FF7600] h-2"></div>
         </div>
-        <div className="bg-cover h-full bg-right-top bg-no-repeat bg-[url(/fundo.jpeg)] text-white">
+        <div className="bg-cover h-full bg-right-top bg-no-repeat bg-[url(/fundo.avif)] text-white">
           <div className="h-full bg-black/0 md:bg-transparent">
             <section
               id="1"
@@ -153,9 +153,9 @@ const Page = async ({
                   <text
                     x="50%"
                     y="50%"
-                    text-anchor="middle"
+                    textAnchor="middle"
                     dy=".3em"
-                    font-size="200"
+                    fontSize="200"
                     fill="#FFF"
                   >
                     1
@@ -179,9 +179,9 @@ const Page = async ({
                   <text
                     x="50%"
                     y="50%"
-                    text-anchor="middle"
+                    textAnchor="middle"
                     dy=".3em"
-                    font-size="200"
+                    fontSize="200"
                     fill="#FFF"
                   >
                     2
@@ -204,9 +204,9 @@ const Page = async ({
                   <text
                     x="50%"
                     y="50%"
-                    text-anchor="middle"
+                    textAnchor="middle"
                     dy=".3em"
-                    font-size="200"
+                    fontSize="200"
                     fill="#FFF"
                   >
                     3
@@ -229,9 +229,9 @@ const Page = async ({
                   <text
                     x="50%"
                     y="50%"
-                    text-anchor="middle"
+                    textAnchor="middle"
                     dy=".3em"
-                    font-size="200"
+                    fontSize="200"
                     fill="#FFF"
                   >
                     4
