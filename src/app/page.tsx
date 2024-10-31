@@ -3,6 +3,7 @@ import CC from "@/components/Contact Section";
 import { Fale } from "@/components/Fale";
 import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import Component from "@/components/Zap";
 import { wisp } from "@/lib/wisp";
 import { getImageProps } from "next/image";
 
@@ -53,6 +54,7 @@ const Page = async ({
   });
   return (
     <div className="overflow-clip ">
+      <Component></Component>
       <div className="h-screen">
         <div className="bg-cover h-full bg-right-top bg-no-repeat bg-[url(/fundo.avif)] text-white">
           <div className="h-full bg-black/0 md:bg-transparent">

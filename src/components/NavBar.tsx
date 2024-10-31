@@ -3,6 +3,7 @@ import { AspectRatio } from "./ui/aspect-ratio";
 import { SheetContent, SheetTrigger, Sheet } from "./ui/sheet";
 import { Button } from "./ui/button";
 
+
 export default function NavBar() {
   return (
     <div>
