@@ -4,7 +4,7 @@ import { Fale } from "@/components/Fale";
 import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import { wisp } from "@/lib/wisp";
-import  { getImageProps } from "next/image";
+import { getImageProps } from "next/image";
 
 const Page = async ({
   searchParams,
@@ -54,10 +54,6 @@ const Page = async ({
   return (
     <div className="overflow-clip ">
       <div className="h-screen">
-        <div className=" bg-[#003F85] overflow-clip">
-          <NavBar />
-          <div className="w-screen bg-[#FF7600] h-2"></div>
-        </div>
         <div className="bg-cover h-full bg-right-top bg-no-repeat bg-[url(/fundo.avif)] text-white">
           <div className="h-full bg-black/0 md:bg-transparent">
             <section

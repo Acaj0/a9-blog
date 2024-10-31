@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 export default function NavBar() {
   return (
     <div>
-      <div className="h-12 flex lg:hidden justify-between items-center p-2">
+      <div className="h-12 flex lg:hidden justify-between items-center z-50 p-2">
         <a href="/">
           <div className="w-[80px]">
             <AspectRatio ratio={4 / 4}>
