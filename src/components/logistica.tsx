@@ -48,7 +48,6 @@ export default function LogisticsSection() {
               ))}
             </div>
           </div>
-          {/* Espaço reservado para logo */}
           <div className="w-32 h-32 mt-5 lg:mt-0 bg-gradient-to-r from-[#003F85] to-[#005ab8] p-2 rounded-full md:ml-8 flex-shrink-0">
           <AspectRatio ratio={4 / 4}>
               <Image
