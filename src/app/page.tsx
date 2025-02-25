@@ -2,7 +2,10 @@ import { BlogPostsPreview } from "@/components/BlogPostPreview";
 import CC from "@/components/Contact Section";
 import { Fale } from "@/components/Fale";
 import { Footer } from "@/components/Footer";
+import LogisticsSection from "@/components/logistica";
 import NavBar from "@/components/NavBar";
+import RoutesSection from "@/components/routes-section";
+import TransportServices from "@/components/transport-services";
 import Component from "@/components/Zap";
 import { wisp } from "@/lib/wisp";
 import { getImageProps } from "next/image";
@@ -84,7 +87,7 @@ const Page = async ({
       </div>
       <div className="w-screen bg-[#003F85] h-4 z-50"></div>
       <div className="w-screen bg-[#FF7600] h-2"></div>
-      <section id="2" className="bg-[#f5f5f5] h-auto justify-center">
+      <section id="2" className="bg-white h-auto justify-center">
         <div className="container mx-auto px-5 z-50">
           <div className="flex flex-col z-0 items-center">
             <h2 className="text-6xl mt-16">Portfólio de Serviços</h2>
@@ -107,153 +110,22 @@ const Page = async ({
                 alt="tecnologias"
               />
             </picture>
-            <a
-              className="z-50 mb-10 text-xl hover:text-white hover:bg-[#FF7600] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
-              /*href="Portifolio de Servicos.pdf"*/
-              target="_blank"
-            >
-              Ver Portfólio Completo
-            </a>
+          
           </div>
         </div>
       </section>
-      <section id="3" className="mt-10 h-auto justify-center">
-        <div className="container mx-auto px-5 z-50">
-          <picture>
-            <source media="(min-width: 1000px)" srcSet={pc} />
-            <source media="(min-width: 500px)" srcSet={mob} />
-            <img
-              {...restProps}
-              style={{ width: "100%", height: "auto" }}
-              alt="agenciamento de cargas"
-            />
-          </picture>
-          <div className="flex flex-col z-0 items-center p-2">
-            {" "}
-            <h1 className="text-6xl mt-10">O que Podemos Fazer por Você</h1>
-            <span className="mt-6 text-xl text-gray-500 text-justify">
-              Nossa atuação é focada no modelo B2B, oferecendo soluções
-              logísticas sob medida, cuidando de todo o processo de transporte,
-              desde o planejamento até o rastreamento detalhado.
-              Independentemente do porte da sua operação, estamos prontos para
-              atender suas necessidades para simplificar e otimizar seu
-              carregamento. Nossos principais pilares:
-            </span>{" "}
-            <div className="grid mt-20 md:grid-cols-2 mb-20 gap-20 p-1">
-              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  fill="#FF7600"
-                  width={60}
-                >
-                  <path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" />
-                  <text
-                    x="50%"
-                    y="50%"
-                    textAnchor="middle"
-                    dy=".3em"
-                    fontSize="200"
-                    fill="#FFF"
-                  >
-                    1
-                  </text>
-                </svg>
-                <div className=" bg-[#003F85] md:h-[72px] md:w-[400px] rounded-full items-center justify-center flex ">
-                  <h4 className=" text-white text-center p-3">
-                    Relacionamento próximo com transportadoras e operadoras de
-                    carga
-                  </h4>
-                </div>
-              </div>
-              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  fill="#FF7600"
-                  width={60}
-                >
-                  <path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" />
-                  <text
-                    x="50%"
-                    y="50%"
-                    textAnchor="middle"
-                    dy=".3em"
-                    fontSize="200"
-                    fill="#FFF"
-                  >
-                    2
-                  </text>
-                </svg>
-                <div className=" bg-[#003F85]  md:h-[72px] md:w-[400px]  rounded-full items-center justify-center flex ">
-                  <h4 className=" text-white text-center p-2">
-                    Carteira diversificada de clientes embarcadores
-                  </h4>
-                </div>
-              </div>
-              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  fill="#FF7600"
-                  width={60}
-                >
-                  <path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" />
-                  <text
-                    x="50%"
-                    y="50%"
-                    textAnchor="middle"
-                    dy=".3em"
-                    fontSize="200"
-                    fill="#FFF"
-                  >
-                    3
-                  </text>
-                </svg>
-                <div className="bg-[#003F85]  md:h-[72px] md:w-[400px]  rounded-full items-center justify-center flex ">
-                  <h4 className=" text-white text-center p-2">
-                    Conhecimento técnico e experiência no setor de transportes
-                  </h4>
-                </div>
-              </div>
-              <div className="flex items-center md:flex-row flex-col gap-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  fill="#FF7600"
-                  width={60}
-                >
-                  <path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" />
-                  <text
-                    x="50%"
-                    y="50%"
-                    textAnchor="middle"
-                    dy=".3em"
-                    fontSize="200"
-                    fill="#FFF"
-                  >
-                    4
-                  </text>
-                </svg>
-                <div className="bg-[#003F85]  md:h-[72px] md:w-[400px]  rounded-full items-center justify-center flex ">
-                  <h4 className=" text-white text-center p-2">
-                    Ferramentas tecnológicas para análise de dados de transporte
-                  </h4>
-                </div>
-              </div>{" "}
-            </div>
-          </div>
-        </div>
-      </section>{" "}
+      <LogisticsSection/>
+      <TransportServices/>
+      <RoutesSection/>
       <div className="w-screen bg-[#003F85] h-4 z-50"></div>
       <div className="w-screen bg-[#FF7600] h-2"></div>
-      <section className="bg-[#f5f5f5] w-screen">
+      <section className="bg-gray-100 w-screen">
         <div className="container mx-auto px-5 mb-10 items-center flex  flex-col">
-          <h2 className="text-6xl mt-4">Ultimas Notícias</h2>
+          <h2 className="text-6xl mt-16">Ultimas Notícias</h2>
           <BlogPostsPreview posts={result.posts.slice(0, 2)} />
           <div className="flex items-center justify-center mb-20">
             <a
-              className="text-xl transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
+              className="text-xl  transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 outline outline-2 p-4 rounded-md"
               href="/posts"
             >
               Ver Todas as Notícias

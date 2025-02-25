@@ -3,7 +3,6 @@ import { config } from "@/config";
 import { Rss } from "lucide-react";
 import Link from "next/link";
 import { FunctionComponent } from "react";
-import { DarkModeToggle } from "./DarkModeToggle";
 import { Button } from "./ui/button";
 
 export const Footer: FunctionComponent = () => {

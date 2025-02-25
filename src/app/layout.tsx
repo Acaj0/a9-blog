@@ -1,4 +1,3 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import { cn } from "@/lib/utils";
@@ -6,6 +5,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import { Analytics } from "@vercel/analytics/react"
 
 const fontSans = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -28,18 +28,12 @@ export default function RootLayout({
         <link rel="icon" href="/a905ico.png" />
       </head>
       <body className={cn("font-sans", fontSans.variable)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Analytics/>
           <div className=" bg-[#003F85] z-50 overflow-clip fixed">
             <NavBar />
             <div className="w-screen bg-[#FF7600] h-2"></div>
           </div>
           <main>{children}</main>
-        </ThemeProvider>
       </body>
     </html>
   );
