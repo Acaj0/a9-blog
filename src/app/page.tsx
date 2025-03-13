@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import LogisticsSection from "@/components/logistica";
 import NavBar from "@/components/NavBar";
 import RoutesSection from "@/components/routes-section";
+import PortfolioServicos from "@/components/PortfolioServicos";
 import TransportServices from "@/components/transport-services";
 import Component from "@/components/Zap";
 import { wisp } from "@/lib/wisp";
@@ -87,33 +88,7 @@ const Page = async ({
       </div>
       <div className="w-screen bg-[#003F85] h-4 z-50"></div>
       <div className="w-screen bg-[#FF7600] h-2"></div>
-      <section id="2" className="bg-white h-auto justify-center">
-        <div className="container mx-auto px-5 z-50">
-          <div className="flex flex-col z-0 items-center">
-            <h2 className="text-6xl mt-16">Portfólio de Serviços</h2>
-            <span className="mt-4 text-xl text-gray-500 text-justify">
-              Com mais de 9 anos de experiência no mercado, a A9 Logística se
-              destaca pela oferta de transporte ágil e eficiente. Contamos com
-              equipamentos modernos, colaboradores altamente capacitados e
-              ferramentas logísticas de última geração. Operamos com uma ampla
-              variedade de caminhões, incluindo veículos próprios e agregados,
-              cuidadosamente selecionados conforme as necessidades específicas
-              de cada cliente, garantindo a solução ideal para cada tipo de
-              carga.
-            </span>
-            <picture>
-              <source media="(min-width: 1000px)" srcSet={desktop} />
-              <source media="(min-width: 500px)" srcSet={mobile} />
-              <img
-                {...rest}
-                style={{ width: "100%", height: "auto" }}
-                alt="tecnologias"
-              />
-            </picture>
-          
-          </div>
-        </div>
-      </section>
+      <PortfolioServicos/>
       <LogisticsSection/>
       <TransportServices/>
       <RoutesSection/>
