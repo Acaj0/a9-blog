@@ -20,7 +20,7 @@ O Site é uma aplicação desenvolvida para ser uma plataforma de apresentação
 - Tailwind
 - Typescript
 
-## Instalação
+## Instalação 
 
 1. Clone o repositório:
    ```bash
