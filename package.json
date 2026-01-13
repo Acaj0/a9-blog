@@ -23,7 +23,7 @@
     "framer-motion": "^12.4.7",
     "label": "^0.2.2",
     "lucide-react": "^0.424.0",
-    "next": "14.2.5",
+    "next": "14.2.35",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
